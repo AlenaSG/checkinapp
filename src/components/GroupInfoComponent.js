@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap'; 
+import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } 
+from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
     function RenderSelectedGroup({group}){
@@ -40,6 +42,14 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
         if (props.group) {
             return(
                 <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <Breadcrumb>
+                                <BreadcrumbItem><Link to="/Directory">Directory</Link></BreadcrumbItem>
+                                <BreadcrumbItem active>{props.group.name}</BreadcrumbItem>
+                            </Breadcrumb>
+                        </div>
+                    </div>
                     <div className="row mt-5">
                         <RenderSelectedGroup group={props.group} />
                         <RenderStudents students={props.students} group={props.group} />

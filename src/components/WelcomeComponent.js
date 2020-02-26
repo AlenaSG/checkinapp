@@ -16,28 +16,29 @@ class Welcome extends Component{
                     <div className="col-sm-5 m-1">
                         <h3>Welcome to</h3>
                         <h2>NLM Willows Campus!</h2>
-                        <h4>Enter 4 Digit Check-In Code</h4>
+                        <h4>Enter 4 Digit Check-In Code And Press #</h4>
                         {/* <input/> */}
                     </div>
-                    <div className="col-sm-5 m-1">
+                    <div className="col-sm-6 m-1">
                         <div className="row">
-                            <Button className="btn btn-lg m-2">1</Button>
-                            <Button className="btn btn-lg m-2">2</Button>
-                            <Button className="btn btn-lg m-2">3</Button>
+                            <Button className="btn btn-lg m-2 btn-info">1</Button>
+                            <Button className="btn btn-lg m-2 btn-info">2</Button>
+                            <Button className="btn btn-lg m-2 btn-info">3</Button>
                         </div>
                         <div className="row">
-                            <Button className="btn btn-lg m-2">4</Button>
-                            <Button className="btn btn-lg m-2">5</Button>
-                            <Button className="btn btn-lg m-2">6</Button>
+                            <Button className="btn btn-lg m-2 btn-info">4</Button>
+                            <Button className="btn btn-lg m-2 btn-info">5</Button>
+                            <Button className="btn btn-lg m-2 btn-info">6</Button>
                         </div>
                         <div className="row">
-                            <Button className="btn btn-lg m-2">7</Button>
-                            <Button className="btn btn-lg m-2">8</Button>
-                            <Button className="btn btn-lg m-2">9</Button>
+                            <Button className="btn btn-lg m-2 btn-info">7</Button>
+                            <Button className="btn btn-lg m-2 btn-info">8</Button>
+                            <Button className="btn btn-lg m-2 btn-info">9</Button>
                         </div>
                         <div className="row">
-                            <Button className="btn btn-lg m-2">0</Button>
-                            <Button className="btn btn-lg m-2">X</Button>
+                            <Button className="btn btn-lg m-2 btn-info">0</Button>
+                            <Button className="btn btn-lg m-2">x</Button>
+                            <Button className="btn btn-lg m-2">#</Button>
                         </div>
                     </div>
                 </div>
