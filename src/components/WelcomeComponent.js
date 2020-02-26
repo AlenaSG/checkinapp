@@ -19,7 +19,7 @@ class Welcome extends Component{
                         <h4>Enter 4 Digit Check-In Code And Press #</h4>
                         {/* <input/> */}
                     </div>
-                    <div className="col-sm-6 m-1">
+                    <div className="col-sm-6 m-1" >
                         <div className="row">
                             <Button className="btn btn-lg m-2 btn-info">1</Button>
                             <Button className="btn btn-lg m-2 btn-info">2</Button>
