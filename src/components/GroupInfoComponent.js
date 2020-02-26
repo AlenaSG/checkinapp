@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap'; 
 
-class GroupInfo extends Component{
-    constructor(props){
-        super(props);
-    }
 
-    renderSelectedGroup(group){
+    function RenderSelectedGroup({group}){
         return(
             <div className="col-md-5 m-1">
                 <Card>
@@ -22,38 +18,36 @@ class GroupInfo extends Component{
         );
     }
 
-    renderStudents(students, group){
+   function RenderStudents({students, group}){
         if(students){
             return(
                 <div className="col-md-5 m-1">
                     <Card>
-                        <h4>{group.name} Students</h4>
-                        {students.map(student => <p key={student}>{student}</p>)}
+                        <h3>{group.name} Students</h3>
+                        {students.map(student => <div key={student.id}><p>{student.firstname} {student.lastname}</p></div> )}
+
+                        {/* {students.map(student => <p key={student}>{student}</p>)} */}
                         {/* {comments.map(comment => <div key={comment.id}>{comment.text} <p>--{comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p> </div> )} */}
 
                     </Card>
                 </div>
             );
         }
-        return(
-            <div />
-        );
+        return <div />
     }
-    render(){
-        if (this.props.group) {
+
+    function GroupInfo(props){
+        if (props.group) {
             return(
                 <div className="container">
                     <div className="row mt-5">
-                        {this.renderSelectedGroup(this.props.group)}
-                        {this.renderStudents(this.props.group.students, this.props.group)}
+                        <RenderSelectedGroup group={props.group} />
+                        <RenderStudents students={props.students} group={props.group} />
                     </div>
                 </div>
             );
         }
-        return (
-            <div />
-        );
+        return <div />
     }
-}
 
 export default GroupInfo;

@@ -6,7 +6,6 @@ export const GROUPS = [
         level: '1st Grade',
         teacher: 'Ms Manolita',
         assistant: 'Ms Anna B',
-        students: ['Alice Arkharov', 'Shesen Abdu', 'Tanvi Sandip', 'Ivan Gusev', 'Daniel Zhukov', 'Anish Anu'],
         full: false
     },
     {
@@ -16,7 +15,6 @@ export const GROUPS = [
         level: 'Kindergarten',
         teacher: 'Ms Green',
         assistant: 'Ms Anna B',
-        students: ['Alice Arkharov', 'Shesen Abdu', 'Tanvi Sandip', 'Ivan Popov', 'Daniel Zhukov', 'Anish Anu'],
         full: false
     },
     {
@@ -26,7 +24,6 @@ export const GROUPS = [
         level: 'Transition-K',
         teacher: 'Ms Alina',
         assistant: 'Ms Anna B',
-        students: ['Alice Arkharov', 'Shesen Abdu', 'Tanvi Sandip', 'Ivan Popov', 'Daniel Zhukov', 'Anish Anu'],
         full: false
     },
     {
@@ -36,7 +33,6 @@ export const GROUPS = [
         level: 'Pre-K',
         teacher: 'Ms Milana',
         assistant: 'Ms Anna B',
-        students: ['Alice Arkharov', 'Shesen Abdu', 'Tanvi Sandip', 'Ivan Popov', 'Daniel Zhukov', 'Anish Anu'],
         full: true
     }
 ]

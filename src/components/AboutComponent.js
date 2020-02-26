@@ -79,7 +79,13 @@ function About(props){
 
     return (
         <div className="container">
-            This is About Us.
+            <h1>Director's Welcome</h1>
+                Welcome to Northern Lights Montessori School! At Northern Lights Montessori, we consider it an honor to play a key role in your child’s growth into a responsible, compassionate, respectful, curious, and well rounded individual. We have a staff of talented teachers and assistants who enjoy working with children.
+
+                We would love the opportunity to work with you in helping your child’s mind bloom during the time when it’s most absorbent. We strive to exceed your expectations in all aspects of your child’s early learning experience. Please don’t hesitate to call us or send us an e-mail to find out more about our school. Also, feel free to give us a call to schedule a tour of our facility. We look forward to meeting you and your child.
+
+                Sincerely,
+                Florence Plantilla
         </div>
     );
 }
